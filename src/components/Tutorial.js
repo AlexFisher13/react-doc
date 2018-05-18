@@ -38,10 +38,27 @@ const Tutorial = () => {
                 <ol>Если вы хотите делать так, здесь есть следующие шаги:</ol>
                 <li>1. Удостоверьтесь что у вас установилена новейшая версия Node.js</li>
                 <li>2. Следуйте инструкции по созданию нового проекта</li>
-                <div className='code'>
-                    <code>npm install -g create-react-app<br/>create-react-app my-app</code>
-                </div>
-                <li>3. Удалите все файлы в папке scr/ в новом проекте (не удаляйте саму папку)</li>
+                    <div className='code'>
+                        <code>npm install -g create-react-app<br/>create-react-app my-app</code>
+                    </div>
+                <li>3. Удалите все файлы в папке <mark>scr/</mark> в новом проекте (не удаляйте саму папку, только контент)</li>
+                    <div className="code">
+                        <code>cd my-app<br/>re -f src/ *</code>
+                    </div>
+                <li>4. Добавьте файл с именем <mark>index.css</mark> в папку <mark>scr/</mark> с <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0100">этим CSS кодом</a>.</li>
+                <li>5. Добавьте файл с именем <mark>index.js</mark> в папку <mark>scr/</mark> с <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">этим JS кодом</a>.</li>
+                <li>6. Добавьте эти строки в самое начало файла <mark>index.js</mark> в папку <mark>scr/</mark>:</li>
+                    <div className="code">
+                        <code>
+                            import React from 'react';<br/>
+                            import ReactDOM from 'react-dom';<br/>
+                            import './index.css'
+                        </code>
+                    </div>
+                <p>Теперь если вы запустите <mark>npm start</mark>в папке нашего проекта и откроете <mark>http://localhost:3000</mark> в браузере, вы должны
+                увидеть пустю область для крестиков и ноликов.</p>
+                <p>Мы рекомендуем следовать <a href="http://babeljs.io/docs/editors">этим инструкциям</a> для конфигурации подцветки синтаксиса в вашем редакторе.</p>
+
         </div>
     )
 }
