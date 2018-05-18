@@ -38,23 +38,13 @@ const Tutorial = () => {
                 <ol>Если вы хотите делать так, здесь есть следующие шаги:</ol>
                 <li>1. Удостоверьтесь что у вас установилена новейшая версия Node.js</li>
                 <li>2. Следуйте инструкции по созданию нового проекта</li>
-                    <div className='code'>
-                        <code>npm install -g create-react-app<br/>create-react-app my-app</code>
-                    </div>
+                    <img src="img/code1.JPG" alt=""/>
                 <li>3. Удалите все файлы в папке <mark>scr/</mark> в новом проекте (не удаляйте саму папку, только контент)</li>
-                    <div className="code">
-                        <code>cd my-app<br/>re -f src/ *</code>
-                    </div>
+                    <img src="img/code2.JPG" alt=""/>
                 <li>4. Добавьте файл с именем <mark>index.css</mark> в папку <mark>scr/</mark> с <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0100">этим CSS кодом</a>.</li>
                 <li>5. Добавьте файл с именем <mark>index.js</mark> в папку <mark>scr/</mark> с <a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">этим JS кодом</a>.</li>
                 <li>6. Добавьте эти строки в самое начало файла <mark>index.js</mark> в папку <mark>scr/</mark>:</li>
-                    <div className="code">
-                        <code>
-                            import React from 'react';<br/>
-                            import ReactDOM from 'react-dom';<br/>
-                            import './index.css'
-                        </code>
-                    </div>
+                    <img src="img/code3.JPG" alt=""/>
                 <p>Теперь если вы запустите <mark>npm start</mark>в папке нашего проекта и откроете <mark>http://localhost:3000</mark> в браузере, вы должны
                 увидеть пустю область для крестиков и ноликов.</p>
                 <p>Мы рекомендуем следовать <a href="http://babeljs.io/docs/editors">этим инструкциям</a> для конфигурации подцветки синтаксиса в вашем редакторе.</p>
@@ -66,7 +56,15 @@ const Tutorial = () => {
         <hr align="center" width="100%" size="2" color="lightgrey"/>
             <h2>Обзор</h2>
             <h3>Почему React?</h3>
-                <p>React является декларативным, эффективным</p>
+                <p>React является декларативной, эффективной и гибкой JavaScript библиотекой для построения юзер-интерфейсов.</p>
+                <p>React имеет несколько разных типов компонентов, но мы начнем с подкласса <mark>React.Component</mark>:</p>
+                    <img src="img/code4.JPG" alt=""/>
+                <p>Мы только что получили до смешного похожие на XML теги. Ваши компоненты говорят React'у что вы хотите отрендерить - тогда React
+                будет эффективно обновллять и рендерить компоненты после того когда данные изменяются.</p>
+            <p>Тут <b>React component class</b> или <b>React component type</b> похожи на список покупок. Компонент принимает в параметры,
+                вызываеммые <mark>props</mark>, и возвращает <mark>view</mark> с помощью метода <mark>render</mark>.</p>
+            <p>Метод <mark>render</mark> возвращает <i>описание</i> того, что вы хотите отрендерить, и когда React берет это описание и рендерить это на экран.
+            В </p>
         </div>
     )
 }

@@ -78,12 +78,6 @@ a:hover {
 mark {
   background-color: rgba(255,229,100,0.2);
 }
-.code {
-  background-color: #21232a;
-  padding: 15px 20px;
-  border-radius: 10px;
-  color: white;
-}
 code {
   font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
   font-weight: lighter;
