@@ -9,7 +9,7 @@ body {
 }
 .App-header {
   background-color: #21232a;
-  padding: 10px;
+  padding: 10px 30px;
   height: 60px;
   color: white;
   display: grid;
@@ -28,6 +28,7 @@ body {
 .App-title {
   font-size: 1.5em;
   display: inline-block;
+  color: rgb(97, 218, 251);
 }
 .page {
   padding: 30px 7%;
@@ -36,12 +37,13 @@ body {
   text-align: justify;
   justify-content: center;
 }
+
 h1 {
-  font-size: 2.3em;
-  margin: 35px 0;
+  font-size: 2.75em;
+  margin: 30px 0;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 2.1em;
   margin: 15px 0;
 }
 h3 {
@@ -50,8 +52,28 @@ h3 {
 }
 h4 {
   font-size: 1.3em;
-  font-weight: lighter;
+  font-weight: normal;
   color: darkgray;
+  margin: 1.2em 0 .6em 0;
+
+}
+p {
+  font-size: 1.1em;
+  margin: .9em 0;
+}
+a {
+  background-color: rgba(187,239,253,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  color: #1a1a1a;
+  text-decoration: none;
+  outline: none;
+}
+li {
+  margin: .6em 0;
+}
+a:hover {
+  background-color: #bbeffd;
+  border-bottom-color: #1a1a1a;
 }
 .code {
   background-color: #21232a;
