@@ -89,3 +89,6 @@ code {
   font-weight: lighter;
   font-size: 12px;
 }
+hr {
+  margin: 35px 0;
+}
