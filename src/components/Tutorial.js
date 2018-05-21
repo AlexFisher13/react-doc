@@ -91,7 +91,24 @@ const Tutorial = () => {
             Board с неким местом для заполнения которое мы будем заполнять позже. Ни один из компонентов на данный момент не является интерактивным.</p>
 
             <h3>Передача данных через Props(свойства)</h3>
-
+            <p>Давайте попробуем передать некоторые данные из компонента Board в компонент Square/</p>
+            <p>В Board компоненте изменим метод renderSquare, передав prop(свойство) <mark>value</mark> в компоненте Square.</p>
+            <img src="img/code6.JPG" alt=""/>
+            <p>Тогда в Square изменим метод <mark>render</mark> чтобы тот показывал value. Заменим <mark>/ *TODO* /</mark> на <mark>this.props.value</mark>:</p>
+            <img src="img/code7.JPG" alt=""/>
+            <p>До:</p>
+            <img src="img/square1.png" alt=""/>
+            <p>После: Вы должны увидеть номера в каждом квадрате.</p>
+            <p><a href="https://codepen.io/gaearon/pen/aWWQOG?editors=0010">Взгляните на текущий код.</a></p>
+            <img src="img/square2.png" alt=""/>
+            <h3>Интерактивный компонент</h3>
+            <p>Давайте сделаем чтобы Square компонент заполнялся "X" когда вы кликаете на него. Измените тег button, который возвращает
+                функция <mark>render()</mark> таким образом:</p>
+            <img src="img/code8.JPG" alt=""/>
+            <p>Если вы теперь кликните на квадрат, вы должны получить предупреждение в вашем браузере.</p>
+            <p>Тут используется новый синтаксис JavaScript - <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
+                стрелочные функции</a>. Заметьте что мы передаем функцию <mark>onClick</mark> как prop. Дейстивие <mark>onClick=&#123;alert('click')&#125;
+            </mark> должно немедленно предупреждать когда кнопка нажата.</p>
         </div>
     )
 }
