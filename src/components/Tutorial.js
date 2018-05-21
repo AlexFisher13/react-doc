@@ -109,6 +109,26 @@ const Tutorial = () => {
             <p>Тут используется новый синтаксис JavaScript - <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions">
                 стрелочные функции</a>. Заметьте что мы передаем функцию <mark>onClick</mark> как prop. Дейстивие <mark>onClick=&#123;alert('click')&#125;
             </mark> должно немедленно предупреждать когда кнопка нажата.</p>
+            <p>React компонент может иметь state(состояние) установленное <mark>this.state</mark> в конструкторе, которое должно рассматриваться как приватное.
+            Давайте сохраним текущее value в state Square, и изменим его когда кликнем на Square.</p>
+            <p>Первое, добавьте конструктор в класс для инициализации state:</p>
+            <img src="img/code9.JPG" alt=""/>
+            <p>В <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">JavaScript классах</a>, вам нужно явно вызвать
+            метод <mark>super()</mark> когда определяете конструктор подкласса.</p>
+            <p>Сейчас измените в Square метод <mark>render</mark> для отображения значения текущего state, и переключения его при клике.</p>
+                <ul>
+                    <li>Замените <mark>this.props.value</mark> на <mark>this.state.value</mark> внутри тега <mark>&lt;button&gt;</mark>.</li>
+                    <li>Замените обработчик события <mark>() => alert()</mark> на <mark>this.setState(&#123;value:'X'&#125;)</mark>.</li>
+                </ul>
+            <p>Сейчас тег <mark>&lt;button&gt;</mark> выглядит вот так:</p>
+            <img src="img/code10.JPG" alt=""/>
+            <p>Всякий раз когда <mark>this.setState</mark> вызывается, он планирует обновление компонента, заставляя React соединять переданное обновленное
+            состояние и перерендеривает компонент в вместе с его потомками. Когда компонент перерендеривается, <mark>this.state.value</mark> станет <mark>'X'</mark> таким
+            образом вы увидете X в сетке.</p>
+            <p>Если вы кликнете на любой Square, то в нём должен появиться X.</p>
+            <p><a href="https://codepen.io/gaearon/pen/VbbVLg?editors=0010">Взгляните на текущий код.</a></p>
+
+            <h3>Инструменты разработчика</h3>
         </div>
     )
 }
