@@ -129,6 +129,9 @@ const Tutorial = () => {
             <p><a href="https://codepen.io/gaearon/pen/VbbVLg?editors=0010">Взгляните на текущий код.</a></p>
 
             <h3>Инструменты разработчика</h3>
+            <p>Эти React инструменты являются расширениями для Chrome и Firefox, которые позволяют вам изучать дерево React компонентов в браузере.</p>
+            <img src="img/tree.png" alt=""/>
+            <p>Это позволяет </p>
         </div>
     )
 }
